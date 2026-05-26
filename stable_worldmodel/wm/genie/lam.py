@@ -1,9 +1,9 @@
 import torch
 from torch import nn
+from einops import rearrange
 from stable_worldmodel.wm.genie.st_maskgit import ST_Transformer
 from stable_worldmodel.wm.genie.vq import VectorQuantizer
 from stable_worldmodel.wm.genie.utils import init_weights
-from einops import rearrange
 
 
 class LAM(nn.Module):
